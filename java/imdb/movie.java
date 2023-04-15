@@ -3,14 +3,17 @@ package java.imdb;
 import java.math.BigDecimal;
 import java.sql.*;
 
-public class movie {
+public class Movie {
     private int id;
     private String name;
     private int year;
     private BigDecimal rank;
 
-    public movie() {
-
+    public Movie(id, name, year, rank) {
+        this.id = id;
+        this.name = name;
+        this.year = year;
+        this.rank = rank;
     }
 
     public int modRecord() {
